@@ -31,7 +31,7 @@ jobs:
         context: ./
         file: ./Dockerfile
         push: true
-        tags: happets/happets-ruby-alpine:2.7.6
+        tags: facundofarias/deploybot-ruby-alpine:2.7.6
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
