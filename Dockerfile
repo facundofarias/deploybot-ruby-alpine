@@ -47,5 +47,5 @@ ONBUILD COPY Gemfile* ./
 ONBUILD RUN bundle install --jobs=3 --retry=3
 
 ONBUILD COPY . ./
-EXPOSE 5000
+EXPOSE 3000
 CMD ["bundle", "exec", "rails", "s"]
