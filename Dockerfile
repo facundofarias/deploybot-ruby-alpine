@@ -16,6 +16,7 @@ RUN apk update && \
       libpq \
       nodejs \
       npm \
+      yarn \
       tzdata \
       zip unzip \
       mysql \
