@@ -25,6 +25,7 @@ RUN apk update && \
       cmake \
       icu-dev \
       findutils \
+      docker openrc \
       git \
       ruby \
       ruby-rugged \
@@ -34,6 +35,8 @@ RUN apk update && \
       openssl \
       openssl-dev && \
     curl -L https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz | tar xz -C /usr/local/bin
+
+RUN rc-update add docker boot
 
 # Install the required version of bundler
 RUN gem install bundler:1.17.3 --no-document
