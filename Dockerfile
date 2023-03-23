@@ -39,7 +39,7 @@ RUN apk update && \
 RUN rc-update add docker boot
 
 # Install the required version of bundler
-RUN gem install bundler:1.17.3 --no-document
+RUN gem install bundler:2.1.4 --no-document
 
 # Define where our application will live inside the image
 RUN mkdir /deploybot
